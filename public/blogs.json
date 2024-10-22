@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "cover_Image": "https://ibb.co.com/LRpkm74",
+        "title": "Why Every Developer Should Learn JavaScript",
+        "author": "Alice Brown",
+        "author_image": "https://ibb.co.com/c89sHMr",
+        "posted_date": "Mar 14 (4 Days Ago)",
+        "reading_time": "6 min read",
+        "hash_tags": ["#javascript", "#programming", "#blog"]
+    },
+    {
+        "id": 2,
+        "cover_Image": "https://ibb.co.com/19tqYzh",
+        "title": "10 Tips for Mastering Responsive Web Design",
+        "author": "Mark Johnson",
+        "author_image": "https://ibb.co.com/6PGdPjq",
+        "posted_date": "Feb 10 (8 Months 9 Days Ago)",
+        "reading_time": "8 min read",
+        "hash_tags": ["#css", "#responsive", "#blog"]
+    },
+    {
+        "id": 3,
+        "cover_Image": "https://ibb.co.com/M8Wd8dm",
+        "title": "A Beginner's Guide to RESTful APIs",
+        "author": "Sarah Connor",
+        "author_image": "https://ibb.co.com/HPD0wDJ",
+        "posted_date": "Mar 05 (7 Months 14 Days Ago)",
+        "reading_time": "7 min read",
+        "hash_tags": ["#API", "#webdev", "#blog"]
+    },
+    {
+        "id": 4,
+        "cover_Image": "https://ibb.co.com/zFc6CDh",
+        "title": "Getting Started with React: Tips and Resources",
+        "author": "David Lee",
+        "author_image": "https://ibb.co.com/qxNJj1k",
+        "posted_date": "Apr 12 (6 Months 7 Days Ago)",
+        "reading_time": "9 min read",
+        "hash_tags": ["#react", "#frontend", "#blog"]
+    },
+    {
+        "id": 5,
+        "cover_Image": "https://ibb.co.com/XtSChVx",
+        "title": "Building Your First App with Node.js",
+        "author": "Emma Green",
+        "author_image": "https://ibb.co.com/PFy3V1d",
+        "posted_date": "May 20 (5 Months 1 Day Ago)",
+        "reading_time": "10 min read",
+        "hash_tags": ["#nodejs", "#backend", "#blog"]
+    },
+    {
+        "id": 6,
+        "cover_Image": "https://ibb.co.com/Yy6HtDT",
+        "title": "DevOps Best Practices for Modern Development",
+        "author": "Jake White",
+        "author_image": "https://ibb.co.com/MfRL7Yc",
+        "posted_date": "Jun 30 (4 Months 1 Day Ago)",
+        "reading_time": "8 min read",
+        "hash_tags": ["#devops", "#cloud", "#blog"]
+    }
+]
