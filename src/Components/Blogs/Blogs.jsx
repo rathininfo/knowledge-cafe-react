@@ -3,7 +3,8 @@ import { useState } from "react";
 import Blog from "../Blog/Blog";
 
 
-const Blogs = ({handleMarkAsRead}) => {
+// eslint-disable-next-line react/prop-types
+const Blogs = ({handleMarkAsRead, handleBookMarks}) => {
     const [blogs, setBlogs] = useState([]);
 
     useEffect(() =>{
@@ -16,7 +17,7 @@ const Blogs = ({handleMarkAsRead}) => {
 
     return (
         <div className="md:w-2/3">
-            {blogs.map((blog) =><Blog key={blog.id} blog = {blog} handleMarkAsRead={handleMarkAsRead}></Blog>)}
+            {blogs.map((blog) =><Blog key={blog.id} blog = {blog} handleMarkAsRead={handleMarkAsRead} handleBookMarks = {handleBookMarks}></Blog>)}
         </div>
     );
 };

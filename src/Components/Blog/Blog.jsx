@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types'; 
 import { FaRegBookmark } from "react-icons/fa";
-const Blog = ({blog, handleMarkAsRead}) => {
+// eslint-disable-next-line react/prop-types
+const Blog = ({blog, handleMarkAsRead, handleBookMarks }) => {
     const {title,cover_Image, author, author_image, posted_date, reading_time, hash_tags} = blog;
     return (
         <div className='mb-10 border-b-2'>
@@ -19,7 +20,7 @@ const Blog = ({blog, handleMarkAsRead}) => {
 
                 <div className='flex items-center gap-2 text-gray-500'>
                     <p>{reading_time}</p>
-                    <figure><FaRegBookmark/></figure>
+                    <figure onClick={()=>handleBookMarks(blog)}><FaRegBookmark/></figure>
                 </div>
             </div>
 

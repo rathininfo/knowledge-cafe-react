@@ -7,11 +7,18 @@ import Header from './Components/Header/Header'
 
 function App() {
 
+  const [bookMarks, setBookMarks] = useState([]);
   const [readTime, setReadTime] = useState(0);
+
   const handleMarkAsRead = (readingTime) =>{
     const timeInMunite = parseInt(readingTime)
     const newReadingTime = readTime + timeInMunite;
     setReadTime (newReadingTime);
+  }
+
+  const handleBookMarks = bookmarks=>{
+    const newBookMarks = [...bookMarks ,bookmarks]
+    setBookMarks(newBookMarks)
   }
   
   return (
@@ -23,8 +30,9 @@ function App() {
 <main className='max-w-[1440px] mx-auto mt-10'>
       <section className='flex mx-auto gap-6 '>
         <Blogs handleMarkAsRead = {handleMarkAsRead}
+        handleBookMarks={handleBookMarks}
         ></Blogs>
-          <Bookmarks readTime ={readTime}></Bookmarks>
+          <Bookmarks readTime ={readTime} bookMarks={bookMarks}></Bookmarks>
       </section>
 </main>
 

@@ -1,13 +1,24 @@
+/* eslint-disable react/prop-types */
 import PropTypes from 'prop-types';
+import Bookmark from '../Bookmark/Bookmark';
 
-const Bookmarks = ({readTime}) => {
+// eslint-disable-next-line react/prop-types
+const Bookmarks = ({readTime, bookMarks}) => {
     return (
-        <div className="md:w-1/3 border-2 border-red-500">
+        <div className="md:w-1/3">
+
+            <div className='bg-gray-200 p-4 rounded-xl text-center'>
+                <p className='text-purple-500 font-bold'>Spent time on read : {readTime} min</p>
+            </div>
 
             <div>
-                <p>Spent time on read : {readTime} min</p>
+                <h2>BookMarks Blog: {bookMarks.length}</h2>
             </div>
-            <h2 className="">Bookmarked Blogs : </h2>
+
+            <div>
+                {bookMarks.map((bookMark)=> <Bookmark key={bookMark.id} bookMark = {bookMark}></Bookmark>)}
+            </div>
+            
         </div>
     );
 };
