@@ -19,14 +19,14 @@ const Blog = ({blog, handleMarkAsRead, handleBookMarks }) => {
                 </div>
 
                 <div className='flex items-center gap-2 text-gray-500'>
-                    <p>{reading_time}</p>
+                    <p>{reading_time} Munite Read</p>
                     <figure className="cursor-pointer" onClick={()=>handleBookMarks(blog)}><FaRegBookmark/></figure>
                 </div>
             </div>
 
             <div>
                 <p className='font-bold text-2xl my-2'>{title}</p>
-                <span className='text-gray-500'>{hash_tags}</span>
+                <span className='text-gray-500'>{hash_tags.join(' ')}</span>
             </div>
 
             <div>
