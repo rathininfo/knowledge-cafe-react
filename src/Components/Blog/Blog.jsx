@@ -20,7 +20,7 @@ const Blog = ({blog, handleMarkAsRead, handleBookMarks }) => {
 
                 <div className='flex items-center gap-2 text-gray-500'>
                     <p>{reading_time}</p>
-                    <figure onClick={()=>handleBookMarks(blog)}><FaRegBookmark/></figure>
+                    <figure className="cursor-pointer" onClick={()=>handleBookMarks(blog)}><FaRegBookmark/></figure>
                 </div>
             </div>
 
